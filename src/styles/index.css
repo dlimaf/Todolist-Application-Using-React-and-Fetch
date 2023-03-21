@@ -1,12 +1,47 @@
+* {
+    background-color: rgb(41, 38, 38);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gainsboro;
+}
+#title {
+    padding-top: 100px;
+    font-weight: bold;
 
-/* 
+}
+#todoinput {
+    background-color: rgb(77, 75, 75);
+    border-radius: 5px;
+    width: 400px;
+    padding: 6px;
+}
+#todolist {
+    background-color: rgb(77, 75, 75);
+    border-radius: 5px;
+    margin-top: 30px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(77, 75, 75);
+    padding: 6px;
+    border-bottom: 1px solid gray;
+    border-radius: 3px;
+}
 
-*/
+.todo i {
+    background-color: rgb(77, 75, 75);
+    padding: 4px;
+}
+#numerodeitems {
+    background-color: rgb(77, 75, 75);
+    font-size: 15px;
+    color: rgba(240, 248, 255, 0.26);
+    float: left;
+    padding: 6px;
+    width: 400px;
+    height: 18px;
+}
