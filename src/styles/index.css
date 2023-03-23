@@ -32,10 +32,11 @@
     border-radius: 3px;
 }
 
-.todo i {
+.todo div, i{
     background-color: rgb(77, 75, 75);
     padding: 4px;
 }
+
 #numerodeitems {
     background-color: rgb(77, 75, 75);
     font-size: 15px;

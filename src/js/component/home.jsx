@@ -9,8 +9,15 @@ import ToDoList from "./todolist.jsx";
 const Home = () => {
 
 	const [ todos , setTodos ] = useState([]);
+
+	
 	
 	const addToDo = (title) => {
+		
+		if(title === '') {
+			return 
+		}
+
 		const newToDo = {
 			title,
 		}
@@ -19,21 +26,23 @@ const Home = () => {
 
 	};
 
+
 	const handleDelete = (title) => {
 		const updatedList = todos.filter(todo => todo.title !== title);
 		setTodos(updatedList);
-	}
-	
+	};
 
 	
+		
 	return (
 		<div className="container">
 			<div className="d-flex align-items-center justify-content-center flex-column">
 				<Title />
-				<ToDoInput addToDo={addToDo} />
+				<ToDoInput addToDo={addToDo}  />
 				<ToDoList 
 				todos={todos}
-				handleDelete={handleDelete} />
+				handleDelete={handleDelete}
+				/>
 
 			</div>
 		</div>

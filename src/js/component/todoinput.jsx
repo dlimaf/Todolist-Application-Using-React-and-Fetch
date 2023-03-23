@@ -10,10 +10,10 @@ const ToDoInput = ({addToDo}) => {
             addToDo(title);
             setTitle('')
         }
-    }
+    };
 
     return (
-        <div >
+        <div  >
             <input 
             id="todoinput"
             type="text" 
