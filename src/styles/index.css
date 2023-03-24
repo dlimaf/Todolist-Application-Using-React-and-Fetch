@@ -9,11 +9,13 @@
 
 }
 #todoinput {
-    background-color: rgb(77, 75, 75);
+    background-color: rgb(56, 55, 55);
     border-radius: 5px;
     width: 400px;
     padding: 6px;
 }
+
+
 #todolist {
     background-color: rgb(77, 75, 75);
     border-radius: 5px;

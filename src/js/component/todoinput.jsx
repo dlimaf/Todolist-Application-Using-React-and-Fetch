@@ -3,12 +3,12 @@ import "../../styles/index.css";
 
 const ToDoInput = ({addToDo}) => {
 
-    const [ title , setTitle ] = useState('');
+    const [ label , setLabel ] = useState('');
     
     const handleToDo = (e) => {
         if(e.key.toLowerCase() === "enter") {
-            addToDo(title);
-            setTitle('')
+            addToDo(label);
+            setLabel('')
         }
     };
 
@@ -18,8 +18,8 @@ const ToDoInput = ({addToDo}) => {
             id="todoinput"
             type="text" 
             placeholder="Enter a task..."
-            value={title}
-            onChange={e => setTitle(e.target.value)}
+            value={label}
+            onChange={e => setLabel(e.target.value)}
             onKeyDown={e => handleToDo(e)}
             />
         </div>

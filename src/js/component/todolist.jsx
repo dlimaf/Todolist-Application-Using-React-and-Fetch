@@ -2,14 +2,16 @@ import React from "react";
 import "../../styles/index.css";
 import ToDo from "./todo.jsx"
 
-const ToDoList = ({ todos, handleDelete }) => {
+const ToDoList = ({ todos , handleDelete , onActualizarTarea }) => {
     return (
         <div id="todolist" className="d-flex flex-column">
-            {todos.map((todo) => {
+            {todos.map((todo, id) => {
                 return (
                     <ToDo 
                     todo={todo}
+                    id={id}
                     handleDelete={handleDelete}
+                    onActualizarTarea={onActualizarTarea}
                     />
                 )
             })}
